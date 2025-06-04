@@ -1,6 +1,68 @@
+/* Header Styling*/
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f8f8;
+}
+.navbar-container{
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: grey;
+  height: 100px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  z-index: auto; 
+}
+
+/* Logo + Title */
+.website-title{
+    display:flex;
+    align-items: center;
+    text-decoration: none; 
+    color: white;
+    font-size: 24px;
+    font-weight: 500px;
+
+}
+
+.website-title img{
+width: 60px;
+height: auto;
+border-radius: 30%;
+margin-right: 20px; 
+}
+
+.navbar-links{
+    display:flex;
+    list-style: none;
+    gap: 15px;
+    cursor: pointer;    
+
+}
+
+.navbar-links a:visited{
+  color: blue;
+}
+
+.navbar-links li a {
+  color: white;
+  display: flex;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500px;
+}
+
+/* Main Section Styling*/
+.playlist-cards{
+    display: grid;
+    grid-template-columns: repeat(autofill, 1fr); /* maybe add a minimum later*/
+
 }
