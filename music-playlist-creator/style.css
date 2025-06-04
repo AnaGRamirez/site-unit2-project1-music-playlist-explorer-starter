@@ -60,9 +60,23 @@ margin-right: 20px;
   font-weight: 500px;
 }
 
+
 /* Main Section Styling*/
 .playlist-cards{
-    display: grid;
-    grid-template-columns: repeat(autofill, 1fr); /* maybe add a minimum later*/
+    margin: 150px 100px 150px 100px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
 
+.flex-item {
+  
+  background: tomato;
+  width: 250px;
+  height: 400px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
 }
