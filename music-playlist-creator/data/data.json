@@ -5,6 +5,7 @@
       "playlist_name": "Reggaetón Vibes",
       "playlist_author": "Curated by Ana",
       "playlist_art": "https://picsum.photos/id/111/200",
+      "playlist_likes": 3,
       "songs": [
         {
           "title": "Tití Me Preguntó",
@@ -25,6 +26,7 @@
       "playlist_name": "Smooth & Soulful",
       "playlist_author": "Late Night Mix",
       "playlist_art": "https://picsum.photos/id/222/200",
+      "playlist_likes": 3,
       "songs": [
         {
           "title": "Best Part",
