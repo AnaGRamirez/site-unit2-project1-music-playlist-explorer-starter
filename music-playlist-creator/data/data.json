@@ -1,0 +1,48 @@
+{
+  "playlists": [  
+    {
+      "playlistID": 1,
+      "playlist_name": "Reggaetón Vibes",
+      "playlist_author": "Curated by Ana",
+      "playlist_art": "https://picsum.photos/id/111/200",
+      "songs": [
+        {
+          "title": "Tití Me Preguntó",
+          "artist": "Bad Bunny",
+          "album": "Un Verano Sin Ti",
+          "cover": "https://picsum.photos/id/43/200",
+          "duration": "4:03"
+        },
+        {
+          "title": "Me Porto Bonito",
+          "artist": "Bad Bunny & Chencho Corleone",
+          "album": "Un Verano Sin Ti",
+          "cover": "https://picsum.photos/id/61/200",
+          "duration": "2:58"
+        }
+      ]
+    },
+    {
+      "playlistID": 2,
+      "playlist_name": "Smooth & Soulful",
+      "playlist_author": "Late Night Mix",
+      "playlist_art": "https://picsum.photos/id/222/200",
+      "songs": [
+        {
+          "title": "Best Part",
+          "artist": "Daniel Caesar ft. H.E.R.",
+          "album": "Freudian",
+          "cover": "https://picsum.photos/id/33/200",
+          "duration": "3:30"
+        },
+        {
+          "title": "Always",
+          "artist": "Daniel Caesar",
+          "album": "NEVER ENOUGH",
+          "cover": "https://picsum.photos/id/80/200",
+          "duration": "3:55"
+        }
+      ]
+    }
+  ]
+}
