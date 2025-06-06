@@ -1,4 +1,11 @@
- 
+//before stretch:
+//handle shuffle
+
+// stretch features to keep in mind: 
+// sort
+// add a new playlist and delete
+
+
  //
  // Fetching playlists and loading them dynamically
  //
@@ -12,10 +19,10 @@ function loadPlaylists(){
         .then(response => response.json())
         .then(playlists => {
 
-            const playlistsList= document.getElementById('playlist-cards'); //parent container
-            reviews.forEach(playlist => {
+            const playlistsContainer= document.getElementById('playlist-cards'); //parent container
+            playlists.forEach(playlist => {
                 const playlistElement = createPlaylistElement(playlist);
-                playlistsList.appendChild(playlistElement);
+                playlistContainer.appendChild(playlistElement);
             });
 
         }).catch(error => {
@@ -23,8 +30,6 @@ function loadPlaylists(){
         });
 
 }
-
-
  /**
    * createPlaylistElement dynamically creates a new playlist based on a given playlist data. 
    * params: A playlist;
@@ -38,22 +43,17 @@ function loadPlaylists(){
     <img src="${playlist.playlist_art} alt="cover-image">     
                 <h3> ${playlist.playlist_name}</h3>
                 <p>Created by ${playlist.playlist_author}</p>
-        
                 <button 
                 class="heart-button" data-id="${playlist.id}" 
                 data-liked="false" 
                 onclick="toggleLike(this)">
-                &#9829; ${playlsit.playlist_likes}
+                ♡; ${playlsit.playlist_likes}
                 </button>
   	`;
-
     return div;
  }
 
  
-
-
-
 //
 // Handling like butotn toggle, which allows users to like and unlike 
 //
@@ -72,14 +72,14 @@ function loadPlaylists(){
     if (isLiked) {
         // If the review is already liked, decrease the like count and update the button
         likesCount -= 1;
-        button.textContent =  `&#9829; ${playlsit.playlist_likes}`
+        button.textContent =  `🤍; ${playlsit.playlist_likes}`
         button.setAttribute('data-liked', 'false');
     }
 
     else {
         // If the review is not liked, increase the like count and update the button
         likesCount += 1;
-        button.textContent =  `&#9829; ${playlsit.playlist_likes}`
+        button.textContent =  `❤️; ${playlsit.playlist_likes}`
         button.setAttribute('data-liked', 'true');
     }
 
@@ -87,8 +87,55 @@ function loadPlaylists(){
 
 
 //
+// Handling the creation of new playlist
+//
+
+ /**
+   * handlePlaylistSubmit creates a new playlits made by the user
+   * params: None;
+   * returns: A playlist
+   */
+
+//  let lastReviewId = 0; // This will be incremented for each new review
+
+// document.addEventListener('DOMContentLoaded', () => {
+// 		loadReviews();
+// 		document.getElementById('review-form').addEventListener('submit', handleReviewSubmit);
+// });
+
+
+//
 // Handling Modal view, which includes closing, opening, and loading the data.
 //
+
+const modal = document.getElementById("modal-overlay");
+const span = document.getElementsByClassName("close")[0];
+
+
+
+ /**
+   * createSongElement dynamically creates a new song card based on a given song data of a playlist. 
+   * params: A playlist;
+   * returns: A song-card/element
+   */
+  function createSongElement(song){
+    const div = document.createElement('div');
+    div.className = "song-card";
+    div.innerHTML = ` 
+
+      <div class="song-left">
+          <img src= ${songs.cover}" alt="Song Cover">
+          <div class="song-info-text">
+            <p class="song-title"> ${songs.title} </p>
+            <p class="song-artist"> ${songs.artist} Bunny</p>
+          </div>
+        </div>
+
+        <p class="song-duration"> ${songs.duration}</p>
+        `;
+    return div;
+ }
+
 
   /**
    * openModal opens the modal view (the modal view displays a single playlist and its songs, it also allows shuffling). 
@@ -96,36 +143,40 @@ function loadPlaylists(){
    * returns: None;
    */
 
+function openModal(playlist) {
+        // disable the body from scrolling when modal view is open.
+        document.body.overflow = 'hidden'; 
+        document.getElementById('playlist-name').innerText = playlist.playlist_name;
+        document.getElementById('playlist-cover').src = playlist.playlist_art;
+        document.getElementById('playlist-creator').innerText = `by ${playlist.playlist_author}`;
 
-  /**
-   * closeModal closes the modal when a person clicks the x button.
-   * params: the x button;
-   * returns: None;
-   */
+       
+        // for each song, display it in songlist when the modal is open
+        const songsContainer = document.getElementById('song-list');  //parent container
+        const songList = playlist.songs;
+        songList.forEach(song =>
+        {
+          const songElement = createSongElement(playlist);
+          songsContainer.appendChild(songElement);
+        });
+        modal.style.display = "flex";
+      }  
 
+  function closeModal(button){
 
+    button.add
+  }
 
+  window.addEventListener("click", (event)=> {
+       if (event.target == modal) {
+            modal.style.display = "none";
+  }}
+);
 
-// const modal = document.getElementById("festivalModal");
-// const span = document.getElementsByClassName("close")[0];
+span.addEventListener("click", (event) => {
+    modal.style.display = "none";
 
-// function openModal(festival) {
-//    document.getElementById('festivalName').innerText = festival.name;
-//    document.getElementById('festivalImage').src = festival.imageUrl;
-//    document.getElementById('festivalDates').innerText = `Dates: ${festival.dates}`;
-//    document.getElementById('festivalLocation').innerText = `Location: ${festival.location}`;
-//    document.getElementById('artistLineup').innerHTML = `<strong>Lineup:</strong> ${festival.lineup.join(', ')}`;
-//    modal.style.display = "block";
-// }
-
-// span.onclick = function() {
-//    modal.style.display = "none";
-// }
-// window.onclick = function(event) {
-//    if (event.target == modal) {
-//       modal.style.display = "none";
-//    }
-// }
+});
 
  
 
