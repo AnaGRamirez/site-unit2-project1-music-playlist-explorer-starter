@@ -57,9 +57,12 @@ function loadPlaylists(){
                 <button 
                 class="heart-button" data-id="${playlist.id}" 
                 data-liked="false" 
-                onclick="toggleLike(this)">
-                ♡ ${playlist.playlist_likes}
+                onclick="toggleLike(event,this)">
+                🤍
+                <span class="like-count"> ${playlist.playlist_likes} </span>
                 </button>
+
+           
   	`;
 
 
@@ -83,22 +86,23 @@ function loadPlaylists(){
    * returns: None
    */
 
- function toggleLike(button){
+ function toggleLike(event,button){
+
     const playlistId = button.getAttribute('data-id');
     const isLiked = button.getAttribute('data-liked') === 'true';
-    const likesCount = parseInt(button.textContent.match(/\d+/)[0], 10); 
+    let likesCount = parseInt(button.textContent.match(/\d+/)[0], 10); 
 
     if (isLiked) {
         // If the review is already liked, decrease the like count and update the button
         likesCount -= 1;
-        button.textContent =  `🤍; ${playlsit.playlist_likes}`
+        button.textContent =  `🤍 ${likesCount}`
         button.setAttribute('data-liked', 'false');
     }
 
     else {
         // If the review is not liked, increase the like count and update the button
         likesCount += 1;
-        button.textContent =  `❤️; ${playlsit.playlist_likes}`
+        button.textContent =  `❤️ ${likesCount}`
         button.setAttribute('data-liked', 'true');
     }
 

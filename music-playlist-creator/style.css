@@ -95,16 +95,22 @@ margin-right: 20px;
 
 
 .heart-button {
+  background-color: transparent;
   border: none;
-  font-size: 2em; 
+  font-size: 1.8em; 
   cursor: pointer; 
-  padding: 10px; 
+  margin: 10px; 
 }
+
 
 .heart-button:hover {
   transform: scale(1.5);
 }
 
+.like-count {
+  font-size : 1.1em;
+  color: #666;
+}
 /* Modal Overlay styling */
 .modal-overlay {
   display:none;
