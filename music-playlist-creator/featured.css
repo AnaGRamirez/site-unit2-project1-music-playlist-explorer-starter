@@ -11,11 +11,10 @@
 
 body {
     font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #444444, #1c1c1c);
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
 }
-
 
 .navbar-container{
 
@@ -44,6 +43,7 @@ body {
 
 }
 
+
 .website-title img{
 width: 60px;
 height: auto;
@@ -69,6 +69,13 @@ margin-right: 20px;
   font-size: 18px;
   font-weight: 500px;
 }
+
+
+.sort-button{
+  color: white;
+  
+}
+
 
 .featured-container {
 
@@ -116,14 +123,13 @@ align-items: flex-start;
 background-color: white;
 width: 100%;
 height: auto;
-border-radius: 10%;
+border-radius: 5%;
 }
 
 .featured-song-card img{
-    width: 30%;
+    width: 25%;
     border-radius: 10%;
     margin: 10px;
-   
 
 }
 
@@ -131,8 +137,6 @@ border-radius: 10%;
  display: flex;   
  justify-content: center;
  flex-direction: column;
- 
-
 }
 
 .song-title{
@@ -140,11 +144,9 @@ border-radius: 10%;
     color: grey;
     font-size: 16px;
     margin: 0;
-
 }
 
 .song-artist{
-
     font-size: 14px;
     color: #666;
     margin: 0;
@@ -152,8 +154,6 @@ border-radius: 10%;
 }
 
 .song-duration{
-
     font-size: 13px;
     color: #999;
-    margin-top: 4px;
 }

@@ -1,40 +1,41 @@
 
 var currentPlaylist = null;
+var allPlaylists = null;
 
-
+// When Dom has loaded, listen to for changes in the modal, in the shuffle button, and in the sort dropdown.
  document.addEventListener("DOMContentLoaded", ()=> {
   loadPlaylists();
 
   const modalOverlay = document.querySelector('.modal-overlay');
   const closeButton = document.querySelector('.close');
   const shuffleButton = document.getElementById('shuffle-button');
+  const selectButton = document.getElementById('playlist-sort');
 
+
+  //closing the modal
   closeButton.addEventListener("click", closeModal);
-
   modalOverlay.addEventListener("click", (event) => {
     if (event.target === modalOverlay){
       closeModal();
     }
   });
-
+  //shuffling songs 
   shuffleButton.addEventListener("click", () => {
-
-
     if (currentPlaylist){
       const shuffledSongs = shuffle(currentPlaylist.songs);
       renderShuffledSongs(shuffledSongs);
     }
   });
+
+
+  // sorting playlists
+  selectButton.addEventListener("change", (event)=> {
+    const selectedValue = event.target.value;
+    sortPlaylist(selectedValue, allPlaylists);
+  });
  });
 
-//
-// Load playlists
-//
 
-
- //
- // Fetching playlists and loading them dynamically
- //
  /**
    * loadPlaylists fetches the playlist from the data file.   
    * params: None;
@@ -44,6 +45,7 @@ function loadPlaylists(){
     fetch('data/data.json')
         .then(response => response.json())
         .then(data => {
+            allPlaylists = data.playlists;
             playlists = data.playlists;
             const playlistsContainer= document.querySelector('.playlist-cards'); //parent container
             playlists.forEach(playlist => {
@@ -92,9 +94,6 @@ function loadPlaylists(){
  }
 
  
-//
-// Handling like butotn toggle, which allows users to like and unlike 
-//
 
  /**
    * toggleLike can like and unlike the a playlist when the like butotn is clicked.
@@ -123,7 +122,13 @@ function loadPlaylists(){
     }
 
  }
+ 
 
+ /**
+   * shuffle:  Randomize the index of an array of songs.
+   * params: an array of songs
+   * returns: the edited array of songs.
+   */
 
  function shuffle(songs){
   for (let currentIndex = songs.length -1; currentIndex >0; currentIndex--){
@@ -140,6 +145,11 @@ function loadPlaylists(){
  }
 
 
+ /**
+   * renderShuffledSongs:  appends the new shuffled songs to the song list. 
+   * params: the array of songs
+   * returns: None
+   */
  function renderShuffledSongs (songs){
   const songList = document.querySelector('.song-list');
   songList.innerHTML = "";
@@ -149,27 +159,6 @@ function loadPlaylists(){
   });
  }
 
-//
-// Handling the creation of new playlist
-//
-
- /**
-   * handlePlaylistSubmit creates a new playlits made by the user
-   * params: None;
-   * returns: A playlist
-   */
-
-//  let lastReviewId = 0; // This will be incremented for each new review
-
-// document.addEventListener('DOMContentLoaded', () => {
-// 		loadReviews();
-// 		document.getElementById('review-form').addEventListener('submit', handleReviewSubmit);
-// });
-
-
-//
-// Handling Modal view, which includes closing, opening, and loading the data.
-//
 
 
  /**
@@ -230,5 +219,69 @@ function openModal(playlist) {
 function closeModal(){
   document.querySelector('.modal-overlay').classList.remove('active');
   document.body.style.overflow = 'auto';
+}
+
+
+  /**
+   * renderSortedPlaylist appends the new sorted playlist to the playlist container.  
+   * params: playlists
+   * returns: None;
+   */
+
+
+function renderSortedPlaylists(playlists) {
+  const playlistsContainer = document.querySelector('.playlist-cards');
+  playlistsContainer.innerHTML = ""; 
+
+  playlists.forEach(playlist => {
+    const playlistElement = createPlaylistElement(playlist);
+    playlistsContainer.appendChild(playlistElement);
+  });
+}
+
+  /**
+   * sortPlaylist sorts playlist based on a specific option. 
+   * params: an option (to sort by), playlists to sort;
+   * returns: new sorted list of playlist;
+   */
+
+
+function sortPlaylist(option, playlists){
+  let sortedPlaylist;
+
+  if (option == 'name-asc') {
+    sortedPlaylist = sortPlaylistByNameAsc(playlists);
+  }
+  else if (option == 'likes-desc' ){
+
+   sortedPlaylist = sortPlaylistByLikesDesc(playlists);
+  }
+
+  else {
+
+    sortedPlaylist = sortPlaylistsByDate(playlists);
+  }
+    
+    renderSortedPlaylists(sortedPlaylist);
+
+}
+
+//
+// Helper functions to sort by name ascending, likes descending, and dates chronologically
+//
+
+function sortPlaylistByNameAsc(playlists) {
+
+  return playlists.sort((a, b) => a.playlist_name.localeCompare(b.playlist_name));
+}
+
+function sortPlaylistByLikesDesc(playlists) {
+  return playlists.sort((a, b) => b.playlist_likes - a.playlist_likes);
+}
+
+function sortPlaylistsByDate(playlists){
+
+  return playlists.sort((a,b) => new Date(a.created_date) - new Date(b.created_date));
+
 }
 

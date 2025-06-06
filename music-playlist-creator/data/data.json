@@ -1,11 +1,12 @@
 {
   "playlists": [
     {
-      "playlistID": 6,
+      "playlistID": 1,
       "playlist_name": "Chill Lofi Beats",
       "playlist_author": "Focus Mode",
       "playlist_art": "https://picsum.photos/id/300/200",
       "playlist_likes": 8,
+      "created_date": "2023-05-12",
       "songs": [
         {
           "title": "Warm Nights",
@@ -28,11 +29,12 @@
       ]
     },
     {
-      "playlistID": 7,
+      "playlistID": 2,
       "playlist_name": "Afrobeat Energy",
       "playlist_author": "Global Vibes",
       "playlist_art": "https://picsum.photos/id/301/200",
       "playlist_likes": 6,
+      "created_date": "2024-01-20",
       "songs": [
         {
           "title": "Essence",
@@ -55,11 +57,12 @@
       ]
     },
     {
-      "playlistID": 8,
+      "playlistID": 3,
       "playlist_name": "EDM Party Bangers",
       "playlist_author": "Night Drive",
       "playlist_art": "https://picsum.photos/id/302/200",
       "playlist_likes": 12,
+      "created_date": "2023-11-05",
       "songs": [
         {
           "title": "Don't You Worry Child",
@@ -88,11 +91,12 @@
       ]
     },
     {
-      "playlistID": 9,
+      "playlistID": 4,
       "playlist_name": "Golden Oldies",
       "playlist_author": "Retro Tunes",
       "playlist_art": "https://picsum.photos/id/306/200",
       "playlist_likes": 9,
+      "created_date": "2022-08-14",
       "songs": [
         {
           "title": "Stand by Me",
@@ -115,11 +119,12 @@
       ]
     },
     {
-      "playlistID": 10,
+      "playlistID": 5,
       "playlist_name": "Indie Breeze",
       "playlist_author": "Weekend Walks",
       "playlist_art": "https://picsum.photos/id/304/200",
       "playlist_likes": 7,
+      "created_date": "2023-03-22",
       "songs": [
         {
           "title": "Sweater Weather",
@@ -142,11 +147,12 @@
       ]
     },
     {
-      "playlistID": 11,
+      "playlistID": 6,
       "playlist_name": "Hip-Hop Essentials",
       "playlist_author": "Beats & Bars",
       "playlist_art": "https://picsum.photos/id/305/200",
       "playlist_likes": 15,
+      "created_date": "2024-04-10",
       "songs": [
         {
           "title": "SICKO MODE",
@@ -175,44 +181,44 @@
       ]
     },
     {
-  "playlistID": 12,
-  "playlist_name": "Regetton",
-  "playlist_author": "Urbano Heat",
-  "playlist_art": "https://picsum.photos/id/501/200",
-  "playlist_likes": 13,
-  "songs": [
-    {
-      "title": "Me Porto Bonito",
-      "artist": "Bad Bunny ft. Chencho Corleone",
-      "cover": "https://picsum.photos/id/61/200",
-      "duration": "2:58"
-    },
-    {
-      "title": "Tití Me Preguntó",
-      "artist": "Bad Bunny",
-      "cover": "https://picsum.photos/id/43/200",
-      "duration": "4:03"
-    },
-    {
-      "title": "Efecto",
-      "artist": "Bad Bunny",
-      "cover": "https://picsum.photos/id/70/200",
-      "duration": "3:33"
-    },
-    {
-      "title": "Ojitos Lindos",
-      "artist": "Bad Bunny ft. Bomba Estéreo",
-      "cover": "https://picsum.photos/id/73/200",
-      "duration": "4:18"
-    },
-    {
-      "title": "DTFM",
-      "artist": "Young Miko",
-      "cover": "https://picsum.photos/id/75/200",
-      "duration": "3:10"
+      "playlistID": 7,
+      "playlist_name": "Regetton",
+      "playlist_author": "Urbano Heat",
+      "playlist_art": "https://picsum.photos/id/501/200",
+      "playlist_likes": 13,
+      "created_date": "2024-02-18",
+      "songs": [
+        {
+          "title": "Me Porto Bonito",
+          "artist": "Bad Bunny ft. Chencho Corleone",
+          "cover": "https://picsum.photos/id/61/200",
+          "duration": "2:58"
+        },
+        {
+          "title": "Tití Me Preguntó",
+          "artist": "Bad Bunny",
+          "cover": "https://picsum.photos/id/43/200",
+          "duration": "4:03"
+        },
+        {
+          "title": "Efecto",
+          "artist": "Bad Bunny",
+          "cover": "https://picsum.photos/id/70/200",
+          "duration": "3:33"
+        },
+        {
+          "title": "Ojitos Lindos",
+          "artist": "Bad Bunny ft. Bomba Estéreo",
+          "cover": "https://picsum.photos/id/73/200",
+          "duration": "4:18"
+        },
+        {
+          "title": "DTFM",
+          "artist": "Young Miko",
+          "cover": "https://picsum.photos/id/75/200",
+          "duration": "3:10"
+        }
+      ]
     }
-  ]
-}
-
   ]
 }
