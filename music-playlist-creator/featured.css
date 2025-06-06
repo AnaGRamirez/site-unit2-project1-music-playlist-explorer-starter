@@ -1,4 +1,14 @@
 /* Header Styling*/
+
+
+/* Header Styling*/
+.sarina-regular {
+  font-family: "Sarina", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -37,6 +47,7 @@ body {
 .website-title img{
 width: 60px;
 height: auto;
+font-family: "Sarina", cursive;
 border-radius: 30%;
 margin-right: 20px; 
 }
@@ -50,9 +61,6 @@ margin-right: 20px;
 
 }
 
-.navbar-links a:visited{
-  color: blue;
-}
 
 .navbar-links li a {
   color: white;
@@ -83,7 +91,8 @@ margin-right: 20px;
 
 .featured-image{
 
-    width: 100%;
+    width: 450px;
+    height: auto;
     border-radius: 20%;
 
 }
@@ -106,20 +115,21 @@ margin-right: 20px;
 display: flex;
 align-items: flex-start;
 background-color: white;
-flex-direction: column;
-
-
+width: 100%;
+height: auto;
+border-radius: 10%;
 }
 
 .featured-song-card img{
     width: 30%;
     border-radius: 10%;
+    margin: 10px;
    
 
 }
 
 .song-info{
-  display: flex;   
+ display: flex;   
  justify-content: center;
  flex-direction: column;
  

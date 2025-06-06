@@ -1,11 +1,9 @@
 
 var currentPlaylist = null;
-//
-// Load playlists
-//
- document.addEventListener("DOMContentLoaded", ()=> {
   loadPlaylists();
- 
+
+ document.addEventListener("DOMContentLoaded", ()=> {
+
 
   const modalOverlay = document.querySelector('.modal-overlay');
   const closeButton = document.querySelector('.close');
@@ -28,6 +26,10 @@ var currentPlaylist = null;
     }
   });
  });
+
+//
+// Load playlists
+//
 
 
  //

@@ -27,10 +27,10 @@ function renderFeaturedPlaylist(playlist){
         songElement.className = 'featured-song-card';
 
         songElement.innerHTML = `
-        <img src = '${song.cover}'alt = "playlist cover">
+        <img src = "${song.cover}" alt = "playlist cover">
     <div class= song-info >
         <p class= song-title-> ${song.title}</p>
-        <p class= song-artist-> ${song.aritst} </p>
+        <p class= song-artist-> ${song.artist} </p>
         <p class= song-duration> ${song.duration} </p>
 
     </div>
