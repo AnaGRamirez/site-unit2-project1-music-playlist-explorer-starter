@@ -1,9 +1,9 @@
 
 var currentPlaylist = null;
-  loadPlaylists();
+
 
  document.addEventListener("DOMContentLoaded", ()=> {
-
+  loadPlaylists();
 
   const modalOverlay = document.querySelector('.modal-overlay');
   const closeButton = document.querySelector('.close');
