@@ -1,16 +1,30 @@
+
+var currentPlaylist = null;
 //
 // Load playlists
 //
  document.addEventListener("DOMContentLoaded", ()=> {
   loadPlaylists();
+ 
 
   const modalOverlay = document.querySelector('.modal-overlay');
   const closeButton = document.querySelector('.close');
+  const shuffleButton = document.getElementById('shuffle-button');
 
   closeButton.addEventListener("click", closeModal);
+
   modalOverlay.addEventListener("click", (event) => {
     if (event.target === modalOverlay){
       closeModal();
+    }
+  });
+
+  shuffleButton.addEventListener("click", () => {
+
+
+    if (currentPlaylist){
+      const shuffledSongs = shuffle(currentPlaylist.songs);
+      renderShuffledSongs(shuffledSongs);
     }
   });
  });
@@ -109,6 +123,30 @@ function loadPlaylists(){
  }
 
 
+ function shuffle(songs){
+  for (let currentIndex = songs.length -1; currentIndex >0; currentIndex--){
+
+    const randomIndex = Math.floor(Math.random() * currentIndex + 1);
+
+    //swaping
+    const temp = songs[currentIndex];
+    songs[currentIndex] = songs[randomIndex]
+    songs[randomIndex] = temp;
+
+  }
+  return songs;
+ }
+
+
+ function renderShuffledSongs (songs){
+  const songList = document.querySelector('.song-list');
+  songList.innerHTML = "";
+  songs.forEach(song => {
+    const songElement = createSongElement(song);
+    songList.appendChild(songElement);
+  });
+ }
+
 //
 // Handling the creation of new playlist
 //
@@ -164,7 +202,9 @@ function loadPlaylists(){
 
 
 function openModal(playlist) {
+
         // disable the body from scrolling when modal view is open.
+        currentPlaylist = playlist;
         const modalOverlay = document.querySelector('.modal-overlay')
         modalOverlay.classList.add('active');
         document.body.style.overflow = 'hidden'; 

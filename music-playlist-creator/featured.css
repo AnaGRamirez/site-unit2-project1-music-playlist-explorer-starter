@@ -1,0 +1,150 @@
+/* Header Styling*/
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+
+.navbar-container{
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: grey;
+  height: 100px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  z-index: auto; 
+}
+
+/* Logo + Title */
+.website-title{
+    display:flex;
+    align-items: center;
+    text-decoration: none; 
+    color: white;
+    font-size: 24px;
+    font-weight: 500px;
+
+}
+
+.website-title img{
+width: 60px;
+height: auto;
+border-radius: 30%;
+margin-right: 20px; 
+}
+
+/* nav bar styling */
+.navbar-links{
+    display:flex;
+    list-style: none;
+    gap: 15px;
+    cursor: pointer;    
+
+}
+
+.navbar-links a:visited{
+  color: blue;
+}
+
+.navbar-links li a {
+  color: white;
+  display: flex;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500px;
+}
+
+.featured-container {
+
+    display:flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 15%;
+    margin-left: 15%;
+
+}
+
+.featured-left{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.featured-image{
+
+    width: 100%;
+    border-radius: 20%;
+
+}
+
+.featured-title{
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.featured-song-list{
+
+    display:flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.featured-song-card{
+
+display: flex;
+align-items: flex-start;
+background-color: white;
+flex-direction: column;
+
+
+}
+
+.featured-song-card img{
+    width: 30%;
+    border-radius: 10%;
+   
+
+}
+
+.song-info{
+  display: flex;   
+ justify-content: center;
+ flex-direction: column;
+ 
+
+}
+
+.song-title{
+    font-weight: bold;
+    color: grey;
+    font-size: 16px;
+    margin: 0;
+
+}
+
+.song-artist{
+
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+
+}
+
+.song-duration{
+
+    font-size: 13px;
+    color: #999;
+    margin-top: 4px;
+}

@@ -71,7 +71,9 @@ margin-right: 20px;
     justify-content: center;
     align-items: flex-end;
 }
-
+.playlist-card:hover{
+  cursor:pointer;
+}
 .playlist-card{
   background-color: white;
   width : 20%;
@@ -147,7 +149,20 @@ margin-right: 20px;
   margin-bottom: 30px;
 }
 
+.modal-top button{
 
+  cursor:pointer;
+  background-color: grey ;
+  font-size: 20px;
+  color: white;
+  padding: 10px;
+  border-radius: 10%;
+  transition: background-color 0.2s ease, tranform 0.2s ease;
+}
+
+.modal-top button:hover{
+  transform:scale(1.2);
+}
 .playlist-cover {
   width: 200px;
   height: auto;
