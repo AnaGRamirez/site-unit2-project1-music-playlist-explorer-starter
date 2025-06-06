@@ -1,115 +1,218 @@
 {
   "playlists": [
     {
-      "playlistID": 1,
-      "playlist_name": "Reggaetón Vibes",
-      "playlist_author": "Curated by Ana",
-      "playlist_art": "https://picsum.photos/id/111/200",
-      "playlist_likes": 3,
+      "playlistID": 6,
+      "playlist_name": "Chill Lofi Beats",
+      "playlist_author": "Focus Mode",
+      "playlist_art": "https://picsum.photos/id/300/200",
+      "playlist_likes": 8,
       "songs": [
         {
-          "title": "Tití Me Preguntó",
-          "artist": "Bad Bunny",
-          "cover": "https://picsum.photos/id/43/200",
-          "duration": "4:03"
+          "title": "Warm Nights",
+          "artist": "Lo-Fi Panda",
+          "cover": "https://picsum.photos/id/10/200",
+          "duration": "2:45"
         },
         {
-          "title": "Me Porto Bonito",
-          "artist": "Bad Bunny & Chencho Corleone",
-          "cover": "https://picsum.photos/id/61/200",
-          "duration": "2:58"
+          "title": "Study Flow",
+          "artist": "Beats by Koji",
+          "cover": "https://picsum.photos/id/20/200",
+          "duration": "3:15"
         },
         {
-          "title": "Dákiti",
-          "artist": "Bad Bunny & Rosalía",
-          "cover": "https://picsum.photos/id/64/200",
+          "title": "Rainy Vibes",
+          "artist": "Chillchild",
+          "cover": "https://picsum.photos/id/30/200",
+          "duration": "2:55"
+        }
+      ]
+    },
+    {
+      "playlistID": 7,
+      "playlist_name": "Afrobeat Energy",
+      "playlist_author": "Global Vibes",
+      "playlist_art": "https://picsum.photos/id/301/200",
+      "playlist_likes": 6,
+      "songs": [
+        {
+          "title": "Essence",
+          "artist": "Wizkid ft. Tems",
+          "cover": "https://picsum.photos/id/31/200",
+          "duration": "4:10"
+        },
+        {
+          "title": "Last Last",
+          "artist": "Burna Boy",
+          "cover": "https://picsum.photos/id/32/200",
+          "duration": "2:55"
+        },
+        {
+          "title": "Peru",
+          "artist": "Fireboy DML ft. Ed Sheeran",
+          "cover": "https://picsum.photos/id/34/200",
+          "duration": "3:07"
+        }
+      ]
+    },
+    {
+      "playlistID": 8,
+      "playlist_name": "EDM Party Bangers",
+      "playlist_author": "Night Drive",
+      "playlist_art": "https://picsum.photos/id/302/200",
+      "playlist_likes": 12,
+      "songs": [
+        {
+          "title": "Don't You Worry Child",
+          "artist": "Swedish House Mafia",
+          "cover": "https://picsum.photos/id/35/200",
           "duration": "3:33"
+        },
+        {
+          "title": "Clarity",
+          "artist": "Zedd ft. Foxes",
+          "cover": "https://picsum.photos/id/36/200",
+          "duration": "4:31"
+        },
+        {
+          "title": "Stay",
+          "artist": "Kygo ft. Maty Noyes",
+          "cover": "https://picsum.photos/id/37/200",
+          "duration": "3:59"
+        },
+        {
+          "title": "Titanium",
+          "artist": "David Guetta ft. Sia",
+          "cover": "https://picsum.photos/id/38/200",
+          "duration": "4:05"
         }
       ]
     },
     {
-      "playlistID": 2,
-      "playlist_name": "Smooth & Soulful",
-      "playlist_author": "Late Night Mix",
-      "playlist_art": "https://picsum.photos/id/222/200",
-      "playlist_likes": 3,
+      "playlistID": 9,
+      "playlist_name": "Golden Oldies",
+      "playlist_author": "Retro Tunes",
+      "playlist_art": "https://picsum.photos/id/306/200",
+      "playlist_likes": 9,
       "songs": [
         {
-          "title": "Best Part",
-          "artist": "Daniel Caesar ft. H.E.R.",
-          "cover": "https://picsum.photos/id/33/200",
-          "duration": "3:30"
+          "title": "Stand by Me",
+          "artist": "Ben E. King",
+          "cover": "https://picsum.photos/id/39/200",
+          "duration": "2:57"
         },
         {
-          "title": "Always",
-          "artist": "Daniel Caesar",
-          "cover": "https://picsum.photos/id/80/200",
-          "duration": "3:55"
+          "title": "My Girl",
+          "artist": "The Temptations",
+          "cover": "https://picsum.photos/id/40/200",
+          "duration": "2:45"
+        },
+        {
+          "title": "Ain’t No Mountain High Enough",
+          "artist": "Marvin Gaye & Tammi Terrell",
+          "cover": "https://picsum.photos/id/41/200",
+          "duration": "2:29"
         }
       ]
     },
     {
-      "playlistID": 3,
-      "playlist_name": "Rock Classics",
-      "playlist_author": "Rock Legends",
-      "playlist_art": "https://picsum.photos/id/900/200",
-      "playlist_likes": 5,
+      "playlistID": 10,
+      "playlist_name": "Indie Breeze",
+      "playlist_author": "Weekend Walks",
+      "playlist_art": "https://picsum.photos/id/304/200",
+      "playlist_likes": 7,
       "songs": [
         {
-          "title": "Bohemian Rhapsody",
-          "artist": "Queen",
-          "cover": "https://picsum.photos/id/44/200",
-          "duration": "5:55"
+          "title": "Sweater Weather",
+          "artist": "The Neighbourhood",
+          "cover": "https://picsum.photos/id/42/200",
+          "duration": "4:00"
         },
         {
-          "title": "Stairway to Heaven",
-          "artist": "Led Zeppelin",
-          "cover": "https://picsum.photos/id/62/200",
-          "duration": "8:02"
+          "title": "Electric Feel",
+          "artist": "MGMT",
+          "cover": "https://picsum.photos/id/46/200",
+          "duration": "3:50"
+        },
+        {
+          "title": "Ophelia",
+          "artist": "The Lumineers",
+          "cover": "https://picsum.photos/id/47/200",
+          "duration": "2:40"
         }
       ]
     },
     {
-      "playlistID": 4,
-      "playlist_name": "Pop Hits",
-      "playlist_author": "Top Charts",
-      "playlist_art": "https://picsum.photos/id/444/200",
-      "playlist_likes": 10,
+      "playlistID": 11,
+      "playlist_name": "Hip-Hop Essentials",
+      "playlist_author": "Beats & Bars",
+      "playlist_art": "https://picsum.photos/id/305/200",
+      "playlist_likes": 15,
       "songs": [
         {
-          "title": "Blinding Lights",
-          "artist": "The Weeknd",
-          "cover": "https://picsum.photos/id/45/200",
-          "duration": "3:20"
+          "title": "SICKO MODE",
+          "artist": "Travis Scott",
+          "cover": "https://picsum.photos/id/48/200",
+          "duration": "5:12"
         },
         {
-          "title": "Levitating",
-          "artist": "Dua Lipa",
-          "cover": "https://picsum.photos/id/63/200",
-          "duration": "3:23"
+          "title": "HUMBLE.",
+          "artist": "Kendrick Lamar",
+          "cover": "https://picsum.photos/id/49/200",
+          "duration": "2:57"
+        },
+        {
+          "title": "God's Plan",
+          "artist": "Drake",
+          "cover": "https://picsum.photos/id/50/200",
+          "duration": "3:18"
+        },
+        {
+          "title": "Stronger",
+          "artist": "Kanye West",
+          "cover": "https://picsum.photos/id/51/200",
+          "duration": "5:12"
         }
       ]
     },
-       {
-      "playlistID": 5,
-      "playlist_name": "Pop Hits",
-      "playlist_author": "Top Charts",
-      "playlist_art": "https://picsum.photos/id/444/200",
-      "playlist_likes": 10,
-      "songs": [
-        {
-          "title": "Blinding Lights",
-          "artist": "The Weeknd",
-          "cover": "https://picsum.photos/id/45/200",
-          "duration": "3:20"
-        },
-        {
-          "title": "Levitating",
-          "artist": "Dua Lipa",
-          "cover": "https://picsum.photos/id/63/200",
-          "duration": "3:23"
-        }
-      ]
+    {
+  "playlistID": 12,
+  "playlist_name": "Regetton",
+  "playlist_author": "Urbano Heat",
+  "playlist_art": "https://picsum.photos/id/501/200",
+  "playlist_likes": 13,
+  "songs": [
+    {
+      "title": "Me Porto Bonito",
+      "artist": "Bad Bunny ft. Chencho Corleone",
+      "cover": "https://picsum.photos/id/61/200",
+      "duration": "2:58"
+    },
+    {
+      "title": "Tití Me Preguntó",
+      "artist": "Bad Bunny",
+      "cover": "https://picsum.photos/id/43/200",
+      "duration": "4:03"
+    },
+    {
+      "title": "Efecto",
+      "artist": "Bad Bunny",
+      "cover": "https://picsum.photos/id/70/200",
+      "duration": "3:33"
+    },
+    {
+      "title": "Ojitos Lindos",
+      "artist": "Bad Bunny ft. Bomba Estéreo",
+      "cover": "https://picsum.photos/id/73/200",
+      "duration": "4:18"
+    },
+    {
+      "title": "DTFM",
+      "artist": "Young Miko",
+      "cover": "https://picsum.photos/id/75/200",
+      "duration": "3:10"
     }
+  ]
+}
+
   ]
 }

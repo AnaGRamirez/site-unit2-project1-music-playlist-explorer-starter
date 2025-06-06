@@ -71,7 +71,7 @@ margin-right: 20px;
 .playlist-cards{
     margin: 150px 100px 150px 100px;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 25px;
     justify-content: center;
@@ -82,7 +82,7 @@ margin-right: 20px;
 }
 .playlist-card{
   background-color: white;
-  width : 20%;
+  width : 350px;
   border: white solid;
   border-radius: 5%;
 }
