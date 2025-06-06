@@ -4,6 +4,19 @@
 // stretch features to keep in mind: 
 // sort
 // add a new playlist and delete
+document.addEventListener("DOMContentLoaded", loadPlaylists);
+ 
+ document.addEventListener("DOMContentLoaded", ()=> {
+  const modalOverlay = document.querySelector('.modal-overlay');
+  const closeButton = document.querySelector('.close');
+
+  closeButton.addEventListener("click", closeModal);
+  modalOverlay.addEventListener("click", (event) => {
+    if (event.target === modalOverlay){
+      closeModal();
+    }
+  });
+ });
 
 
  //
@@ -15,7 +28,7 @@
    * returns: None
    */
 function loadPlaylists(){
-    fetch('/data/data.json')
+    fetch('data/data.json')
         .then(response => response.json())
         .then(playlists => {
 
@@ -50,7 +63,15 @@ function loadPlaylists(){
                 ♡; ${playlsit.playlist_likes}
                 </button>
   	`;
-    return div;
+
+
+    div.addEventListener("click", (event)=> {
+
+      if (!event.target.classList.contains("heart-button")){
+        openModal(playlist);
+      }
+    });
+     return div;
  }
 
  
@@ -124,14 +145,14 @@ const span = document.getElementsByClassName("close")[0];
     div.innerHTML = ` 
 
       <div class="song-left">
-          <img src= ${songs.cover}" alt="Song Cover">
+          <img src= ${song.cover} alt="Song Cover">
           <div class="song-info-text">
-            <p class="song-title"> ${songs.title} </p>
-            <p class="song-artist"> ${songs.artist} Bunny</p>
+            <p class="song-title"> ${song.title} </p>
+            <p class="song-artist"> ${song.artist} </p>
           </div>
         </div>
 
-        <p class="song-duration"> ${songs.duration}</p>
+        <p class="song-duration"> ${song.duration}</p>
         `;
     return div;
  }
@@ -143,41 +164,29 @@ const span = document.getElementsByClassName("close")[0];
    * returns: None;
    */
 
+
 function openModal(playlist) {
         // disable the body from scrolling when modal view is open.
-        document.body.overflow = 'hidden'; 
+        modalOverlay.classList.add('active');
+
+
         document.getElementById('playlist-name').innerText = playlist.playlist_name;
         document.getElementById('playlist-cover').src = playlist.playlist_art;
         document.getElementById('playlist-creator').innerText = `by ${playlist.playlist_author}`;
 
        
         // for each song, display it in songlist when the modal is open
-        const songsContainer = document.getElementById('song-list');  //parent container
-        const songList = playlist.songs;
-        songList.forEach(song =>
+        const songList = document.getElementById('song-list');  //parent container
+        songList.innerHTML = "";
+        playlist.songs.forEach(song =>
         {
-          const songElement = createSongElement(playlist);
-          songsContainer.appendChild(songElement);
-        });
-        modal.style.display = "flex";
-      }  
+          const songElement = createSongElement(song);
+          songList.appendChild(songElement);
+        });   
+        }
 
-  function closeModal(button){
 
-    button.add
-  }
-
-  window.addEventListener("click", (event)=> {
-       if (event.target == modal) {
-            modal.style.display = "none";
-  }}
-);
-
-span.addEventListener("click", (event) => {
-    modal.style.display = "none";
-
-});
-
- 
-
+function closeModal(){
+  document.querySelector('.modal-overlay').classList.remove('active');
+}
 
