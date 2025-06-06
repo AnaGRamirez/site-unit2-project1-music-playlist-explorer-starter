@@ -127,7 +127,6 @@ margin-right: 20px;
 }
 
 .modal-content {
-  display: none;
   width: 750px;
   height: 750px;
   background-color: white;
@@ -169,6 +168,7 @@ margin-right: 20px;
    float: right;
    font-size: 28px;
    font-weight: bold;
+   cursor: pointer;
 }
 
 

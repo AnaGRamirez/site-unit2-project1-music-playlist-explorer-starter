@@ -163,14 +163,15 @@ function openModal(playlist) {
         // disable the body from scrolling when modal view is open.
         const modalOverlay = document.querySelector('.modal-overlay')
         modalOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden'; 
 
-        document.getElementById('playlist-name').innerText = playlist.playlist_name;
-        document.getElementById('playlist-cover').src = playlist.playlist_art;
-        document.getElementById('playlist-creator').innerText = `by ${playlist.playlist_author}`;
+        document.querySelector('.playlist-name').innerText = playlist.playlist_name;
+        document.querySelector('.playlist-cover').src = playlist.playlist_art;
+        document.querySelector('.playlist-creator').innerText = `by ${playlist.playlist_author}`;
 
        
         // for each song, display it in songlist when the modal is open
-        const songList = document.getElementById('song-list');  //parent container
+        const songList = document.querySelector('.song-list');  //parent container
         songList.innerHTML = "";
         playlist.songs.forEach(song =>
         {
@@ -182,5 +183,6 @@ function openModal(playlist) {
 
 function closeModal(){
   document.querySelector('.modal-overlay').classList.remove('active');
+  document.body.style.overflow = 'auto';
 }
 
