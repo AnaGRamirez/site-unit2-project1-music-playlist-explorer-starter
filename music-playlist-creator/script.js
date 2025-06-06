@@ -1,12 +1,9 @@
-//before stretch:
-//handle shuffle
-
-// stretch features to keep in mind: 
-// sort
-// add a new playlist and delete
-document.addEventListener("DOMContentLoaded", loadPlaylists);
- 
+//
+// Load playlists
+//
  document.addEventListener("DOMContentLoaded", ()=> {
+  loadPlaylists();
+
   const modalOverlay = document.querySelector('.modal-overlay');
   const closeButton = document.querySelector('.close');
 
@@ -30,15 +27,16 @@ document.addEventListener("DOMContentLoaded", loadPlaylists);
 function loadPlaylists(){
     fetch('data/data.json')
         .then(response => response.json())
-        .then(playlists => {
-
-            const playlistsContainer= document.getElementById('playlist-cards'); //parent container
+        .then(data => {
+            playlists = data.playlists;
+            const playlistsContainer= document.querySelector('.playlist-cards'); //parent container
             playlists.forEach(playlist => {
                 const playlistElement = createPlaylistElement(playlist);
-                playlistContainer.appendChild(playlistElement);
+                playlistsContainer.appendChild(playlistElement);
             });
 
         }).catch(error => {
+          console.log(error.message)
             console.log ("********ERROR: couldn't load the playlists ******* ")
         });
 
@@ -53,14 +51,14 @@ function loadPlaylists(){
     div.className = "playlist-card";
     div.innerHTML = ` 
 
-    <img src="${playlist.playlist_art} alt="cover-image">     
+    <img src="${playlist.playlist_art}" alt="cover-image">     
                 <h3> ${playlist.playlist_name}</h3>
                 <p>Created by ${playlist.playlist_author}</p>
                 <button 
                 class="heart-button" data-id="${playlist.id}" 
                 data-liked="false" 
                 onclick="toggleLike(this)">
-                ♡; ${playlsit.playlist_likes}
+                ♡ ${playlist.playlist_likes}
                 </button>
   	`;
 
@@ -129,10 +127,6 @@ function loadPlaylists(){
 // Handling Modal view, which includes closing, opening, and loading the data.
 //
 
-const modal = document.getElementById("modal-overlay");
-const span = document.getElementsByClassName("close")[0];
-
-
 
  /**
    * createSongElement dynamically creates a new song card based on a given song data of a playlist. 
@@ -145,7 +139,7 @@ const span = document.getElementsByClassName("close")[0];
     div.innerHTML = ` 
 
       <div class="song-left">
-          <img src= ${song.cover} alt="Song Cover">
+          <img src= "${song.cover}" alt="Song Cover">
           <div class="song-info-text">
             <p class="song-title"> ${song.title} </p>
             <p class="song-artist"> ${song.artist} </p>
@@ -167,8 +161,8 @@ const span = document.getElementsByClassName("close")[0];
 
 function openModal(playlist) {
         // disable the body from scrolling when modal view is open.
+        const modalOverlay = document.querySelector('.modal-overlay')
         modalOverlay.classList.add('active');
-
 
         document.getElementById('playlist-name').innerText = playlist.playlist_name;
         document.getElementById('playlist-cover').src = playlist.playlist_art;

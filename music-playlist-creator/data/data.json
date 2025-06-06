@@ -1,5 +1,5 @@
 {
-  "playlists": [  
+  "playlists": [
     {
       "playlistID": 1,
       "playlist_name": "Reggaetón Vibes",
@@ -39,6 +39,48 @@
           "artist": "Daniel Caesar",
           "cover": "https://picsum.photos/id/80/200",
           "duration": "3:55"
+        }
+      ]
+    },
+    {
+      "playlistID": 3,
+      "playlist_name": "Rock Classics",
+      "playlist_author": "Rock Legends",
+      "playlist_art": "https://picsum.photos/id/900/200",
+      "playlist_likes": 5,
+      "songs": [
+        {
+          "title": "Bohemian Rhapsody",
+          "artist": "Queen",
+          "cover": "https://picsum.photos/id/44/200",
+          "duration": "5:55"
+        },
+        {
+          "title": "Stairway to Heaven",
+          "artist": "Led Zeppelin",
+          "cover": "https://picsum.photos/id/62/200",
+          "duration": "8:02"
+        }
+      ]
+    },
+    {
+      "playlistID": 4,
+      "playlist_name": "Pop Hits",
+      "playlist_author": "Top Charts",
+      "playlist_art": "https://picsum.photos/id/444/200",
+      "playlist_likes": 10,
+      "songs": [
+        {
+          "title": "Blinding Lights",
+          "artist": "The Weeknd",
+          "cover": "https://picsum.photos/id/45/200",
+          "duration": "3:20"
+        },
+        {
+          "title": "Levitating",
+          "artist": "Dua Lipa",
+          "cover": "https://picsum.photos/id/63/200",
+          "duration": "3:23"
         }
       ]
     }

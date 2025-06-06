@@ -74,7 +74,7 @@ margin-right: 20px;
 
 .playlist-card{
   background-color: white;
-  max-width : 250px;
+  width : 20%;
   border: white solid;
   border-radius: 5%;
 }
@@ -94,8 +94,20 @@ margin-right: 20px;
 }
 
 
+.heart-button {
+  border: none;
+  font-size: 2em; 
+  cursor: pointer; 
+  padding: 10px; 
+}
+
+.heart-button:hover {
+  transform: scale(1.5);
+}
+
 /* Modal Overlay styling */
 .modal-overlay {
+  display:none;
   position: fixed;
   z-index: 10;
   left: 0;
@@ -104,14 +116,18 @@ margin-right: 20px;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
   display:none;
-  display: flex;
   align-items: center;  /* center the modal along the cross axis */
   justify-content: center;/* center the modal itself on the main axis */
   padding: 40px; 
 }
 
 
+.modal-overlay.active {
+  display:flex;
+}
+
 .modal-content {
+  display: none;
   width: 750px;
   height: 750px;
   background-color: white;
