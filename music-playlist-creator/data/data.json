@@ -1,152 +1,224 @@
-[
-  {
-    "playlistID": 0,
-    "playlist_name": "EDM Party Bangers",
-    "playlist_author": "Night Drive",
-    "playlist_art": "https://picsum.photos/id/302/200",
-    "playlist_likes": 0,
-    "created_date": "2023-11-05",
-    "songs": [
-      {"title": "Don't You Worry Child", "artist": "Swedish House Mafia", "cover": "https://picsum.photos/id/35/200", "duration": "3:33"},
-      {"title": "Clarity", "artist": "Zedd ft. Foxes", "cover": "https://picsum.photos/id/36/200", "duration": "4:31"},
-      {"title": "Stay", "artist": "Kygo ft. Maty Noyes", "cover": "https://picsum.photos/id/37/200", "duration": "3:59"},
-      {"title": "Titanium", "artist": "David Guetta ft. Sia", "cover": "https://picsum.photos/id/38/200", "duration": "4:05"},
-      {"title": "Wake Me Up", "artist": "Avicii", "cover": "https://picsum.photos/id/52/200", "duration": "4:09"}
-    ]
-  },
-  {
-    "playlistID": 1,
-    "playlist_name": "Hip-Hop Essentials",
-    "playlist_author": "Beats & Bars",
-    "playlist_art": "https://picsum.photos/id/305/200",
-    "playlist_likes": 15,
-    "created_date": "2024-04-10",
-    "songs": [
-      {"title": "SICKO MODE", "artist": "Travis Scott", "cover": "https://picsum.photos/id/48/200", "duration": "5:12"},
-      {"title": "HUMBLE.", "artist": "Kendrick Lamar", "cover": "https://picsum.photos/id/49/200", "duration": "2:57"},
-      {"title": "God's Plan", "artist": "Drake", "cover": "https://picsum.photos/id/50/200", "duration": "3:18"},
-      {"title": "Stronger", "artist": "Kanye West", "cover": "https://picsum.photos/id/51/200", "duration": "5:12"},
-      {"title": "Lose Yourself", "artist": "Eminem", "cover": "https://picsum.photos/id/53/200", "duration": "5:20"}
-    ]
-  },
-  {
-    "playlistID": 2,
-    "playlist_name": "Regetton Hits",
-    "playlist_author": "Urbano Heat",
-    "playlist_art": "https://picsum.photos/id/501/200",
-    "playlist_likes": 13,
-    "created_date": "2024-02-18",
-    "songs": [
-      {"title": "Me Porto Bonito", "artist": "Bad Bunny ft. Chencho Corleone", "cover": "https://picsum.photos/id/61/200", "duration": "2:58"},
-      {"title": "Tití Me Preguntó", "artist": "Bad Bunny", "cover": "https://picsum.photos/id/43/200", "duration": "4:03"},
-      {"title": "Efecto", "artist": "Bad Bunny", "cover": "https://picsum.photos/id/70/200", "duration": "3:33"},
-      {"title": "Ojitos Lindos", "artist": "Bad Bunny ft. Bomba Estéreo", "cover": "https://picsum.photos/id/73/200", "duration": "4:18"},
-      {"title": "DTFM", "artist": "Young Miko", "cover": "https://picsum.photos/id/75/200", "duration": "3:10"}
-    ]
-  },
-  {
-    "playlistID": 3,
-    "playlist_name": "Chill Lofi Extended",
-    "playlist_author": "Focus Mode",
-    "playlist_art": "https://picsum.photos/id/300/200",
-    "playlist_likes": 10,
-    "created_date": "2023-05-12",
-    "songs": [
-      {"title": "Warm Nights", "artist": "Lo-Fi Panda", "cover": "https://picsum.photos/id/10/200", "duration": "2:45"},
-      {"title": "Study Flow", "artist": "Beats by Koji", "cover": "https://picsum.photos/id/20/200", "duration": "3:15"},
-      {"title": "Rainy Vibes", "artist": "Chillchild", "cover": "https://picsum.photos/id/30/200", "duration": "2:55"},
-      {"title": "Cozy Evening", "artist": "Lo-Fi Panda", "cover": "https://picsum.photos/id/55/200", "duration": "3:05"},
-      {"title": "Late Night Walks", "artist": "Beats by Koji", "cover": "https://picsum.photos/id/56/200", "duration": "3:20"}
-    ]
-  },
-  {
-    "playlistID": 4,
-    "playlist_name": "Golden Oldies Deluxe",
-    "playlist_author": "Retro Tunes",
-    "playlist_art": "https://picsum.photos/id/306/200",
-    "playlist_likes": 11,
-    "created_date": "2022-08-14",
-    "songs": [
-      {"title": "Stand by Me", "artist": "Ben E. King", "cover": "https://picsum.photos/id/39/200", "duration": "2:57"},
-      {"title": "My Girl", "artist": "The Temptations", "cover": "https://picsum.photos/id/40/200", "duration": "2:45"},
-      {"title": "Ain’t No Mountain High Enough", "artist": "Marvin Gaye & Tammi Terrell", "cover": "https://picsum.photos/id/41/200", "duration": "2:29"},
-      {"title": "I Heard It Through the Grapevine", "artist": "Marvin Gaye", "cover": "https://picsum.photos/id/54/200", "duration": "3:13"},
-      {"title": "What’s Going On", "artist": "Marvin Gaye", "cover": "https://picsum.photos/id/57/200", "duration": "3:53"}
-    ]
-  },
-  {
-    "playlistID": 5,
-    "playlist_name": "Indie Breeze Extended",
-    "playlist_author": "Weekend Walks",
-    "playlist_art": "https://picsum.photos/id/304/200",
-    "playlist_likes": 9,
-    "created_date": "2023-03-22",
-    "songs": [
-      {"title": "Sweater Weather", "artist": "The Neighbourhood", "cover": "https://picsum.photos/id/42/200", "duration": "4:00"},
-      {"title": "Electric Feel", "artist": "MGMT", "cover": "https://picsum.photos/id/46/200", "duration": "3:50"},
-      {"title": "Ophelia", "artist": "The Lumineers", "cover": "https://picsum.photos/id/47/200", "duration": "2:40"},
-      {"title": "Dog Days Are Over", "artist": "Florence + The Machine", "cover": "https://picsum.photos/id/58/200", "duration": "4:12"},
-      {"title": "Young Lion", "artist": "Vampire Weekend", "cover": "https://picsum.photos/id/59/200", "duration": "3:34"}
-    ]
-  },
-  {
-    "playlistID": 6,
-    "playlist_name": "Afrobeat Energy Deluxe",
-    "playlist_author": "Global Vibes",
-    "playlist_art": "https://picsum.photos/id/301/200",
-    "playlist_likes": 8,
-    "created_date": "2024-01-20",
-    "songs": [
-      {"title": "Essence", "artist": "Wizkid ft. Tems", "cover": "https://picsum.photos/id/31/200", "duration": "4:10"},
-      {"title": "Last Last", "artist": "Burna Boy", "cover": "https://picsum.photos/id/32/200", "duration": "2:55"},
-      {"title": "Peru", "artist": "Fireboy DML ft. Ed Sheeran", "cover": "https://picsum.photos/id/34/200", "duration": "3:07"},
-      {"title": "Ye", "artist": "Burna Boy", "cover": "https://picsum.photos/id/60/200", "duration": "3:37"},
-      {"title": "Jerusalema", "artist": "Master KG ft. Nomcebo", "cover": "https://picsum.photos/id/62/200", "duration": "4:02"}
-    ]
-  },
-  {
-    "playlistID": 7,
-    "playlist_name": "Pop Hits Extended",
-    "playlist_author": "Top Charts",
-    "playlist_art": "https://picsum.photos/id/503/200",
-    "playlist_likes": 14,
-    "created_date": "2024-05-01",
-    "songs": [
-      {"title": "Blinding Lights", "artist": "The Weeknd", "cover": "https://picsum.photos/id/63/200", "duration": "3:22"},
-      {"title": "Levitating", "artist": "Dua Lipa", "cover": "https://picsum.photos/id/64/200", "duration": "3:23"},
-      {"title": "Watermelon Sugar", "artist": "Harry Styles", "cover": "https://picsum.photos/id/65/200", "duration": "2:54"},
-      {"title": "Peaches", "artist": "Justin Bieber", "cover": "https://picsum.photos/id/66/200", "duration": "3:18"},
-      {"title": "Good 4 U", "artist": "Olivia Rodrigo", "cover": "https://picsum.photos/id/67/200", "duration": "2:58"}
-    ]
-  },
-  {
-    "playlistID": 8,
-    "playlist_name": "Rock Classics",
-    "playlist_author": "Classic Rockers",
-    "playlist_art": "https://picsum.photos/id/504/200",
-    "playlist_likes": 11,
-    "created_date": "2023-12-15",
-    "songs": [
-      {"title": "Bohemian Rhapsody", "artist": "Queen", "cover": "https://picsum.photos/id/68/200", "duration": "5:55"},
-      {"title": "Hotel California", "artist": "Eagles", "cover": "https://picsum.photos/id/69/200", "duration": "6:30"},
-      {"title": "Sweet Child O’ Mine", "artist": "Guns N’ Roses", "cover": "https://picsum.photos/id/71/200", "duration": "5:56"},
-      {"title": "Back In Black", "artist": "AC/DC", "cover": "https://picsum.photos/id/72/200", "duration": "4:15"},
-      {"title": "Smoke on the Water", "artist": "Deep Purple", "cover": "https://picsum.photos/id/74/200", "duration": "5:40"}
-    ]
-  },
-  {
-    "playlistID": 9,
-    "playlist_name": "Soulful Sundays",
-    "playlist_author": "Smooth Vibes",
-    "playlist_art": "https://picsum.photos/id/507/200",
-    "playlist_likes": 9,
-    "created_date": "2023-07-09",
-    "songs": [
-      {"title": "Ain’t No Sunshine", "artist": "Bill Withers", "cover": "https://picsum.photos/id/76/200", "duration": "2:05"},
-      {"title": "Lovely Day", "artist": "Bill Withers", "cover": "https://picsum.photos/id/77/200", "duration": "4:15"},
-      {"title": "Let's Stay Together", "artist": "Al Green", "cover": "https://picsum.photos/id/78/200", "duration": "3:18"},
-      {"title": "Sexual Healing", "artist": "Marvin Gaye", "cover": "https://picsum.photos/id/79/200", "duration": "4:03"},
-      {"title": "At Last", "artist": "Etta James", "cover": "https://picsum.photos/id/80/200", "duration": "3:02"}
-    ]
-  }
-]
+{
+  "playlists": [
+    {
+      "playlistID": 1,
+      "playlist_name": "Chill Lofi Beats",
+      "playlist_author": "Focus Mode",
+      "playlist_art": "https://picsum.photos/id/300/200",
+      "playlist_likes": 8,
+      "created_date": "2023-05-12",
+      "songs": [
+        {
+          "title": "Warm Nights",
+          "artist": "Lo-Fi Panda",
+          "cover": "https://picsum.photos/id/10/200",
+          "duration": "2:45"
+        },
+        {
+          "title": "Study Flow",
+          "artist": "Beats by Koji",
+          "cover": "https://picsum.photos/id/20/200",
+          "duration": "3:15"
+        },
+        {
+          "title": "Rainy Vibes",
+          "artist": "Chillchild",
+          "cover": "https://picsum.photos/id/30/200",
+          "duration": "2:55"
+        }
+      ]
+    },
+    {
+      "playlistID": 2,
+      "playlist_name": "Afrobeat Energy",
+      "playlist_author": "Global Vibes",
+      "playlist_art": "https://picsum.photos/id/301/200",
+      "playlist_likes": 6,
+      "created_date": "2024-01-20",
+      "songs": [
+        {
+          "title": "Essence",
+          "artist": "Wizkid ft. Tems",
+          "cover": "https://picsum.photos/id/31/200",
+          "duration": "4:10"
+        },
+        {
+          "title": "Last Last",
+          "artist": "Burna Boy",
+          "cover": "https://picsum.photos/id/32/200",
+          "duration": "2:55"
+        },
+        {
+          "title": "Peru",
+          "artist": "Fireboy DML ft. Ed Sheeran",
+          "cover": "https://picsum.photos/id/34/200",
+          "duration": "3:07"
+        }
+      ]
+    },
+    {
+      "playlistID": 3,
+      "playlist_name": "EDM Party Bangers",
+      "playlist_author": "Night Drive",
+      "playlist_art": "https://picsum.photos/id/302/200",
+      "playlist_likes": 12,
+      "created_date": "2023-11-05",
+      "songs": [
+        {
+          "title": "Don't You Worry Child",
+          "artist": "Swedish House Mafia",
+          "cover": "https://picsum.photos/id/35/200",
+          "duration": "3:33"
+        },
+        {
+          "title": "Clarity",
+          "artist": "Zedd ft. Foxes",
+          "cover": "https://picsum.photos/id/36/200",
+          "duration": "4:31"
+        },
+        {
+          "title": "Stay",
+          "artist": "Kygo ft. Maty Noyes",
+          "cover": "https://picsum.photos/id/37/200",
+          "duration": "3:59"
+        },
+        {
+          "title": "Titanium",
+          "artist": "David Guetta ft. Sia",
+          "cover": "https://picsum.photos/id/38/200",
+          "duration": "4:05"
+        }
+      ]
+    },
+    {
+      "playlistID": 4,
+      "playlist_name": "Golden Oldies",
+      "playlist_author": "Retro Tunes",
+      "playlist_art": "https://picsum.photos/id/306/200",
+      "playlist_likes": 9,
+      "created_date": "2022-08-14",
+      "songs": [
+        {
+          "title": "Stand by Me",
+          "artist": "Ben E. King",
+          "cover": "https://picsum.photos/id/39/200",
+          "duration": "2:57"
+        },
+        {
+          "title": "My Girl",
+          "artist": "The Temptations",
+          "cover": "https://picsum.photos/id/40/200",
+          "duration": "2:45"
+        },
+        {
+          "title": "Ain’t No Mountain High Enough",
+          "artist": "Marvin Gaye & Tammi Terrell",
+          "cover": "https://picsum.photos/id/41/200",
+          "duration": "2:29"
+        }
+      ]
+    },
+    {
+      "playlistID": 5,
+      "playlist_name": "Indie Breeze",
+      "playlist_author": "Weekend Walks",
+      "playlist_art": "https://picsum.photos/id/304/200",
+      "playlist_likes": 7,
+      "created_date": "2023-03-22",
+      "songs": [
+        {
+          "title": "Sweater Weather",
+          "artist": "The Neighbourhood",
+          "cover": "https://picsum.photos/id/42/200",
+          "duration": "4:00"
+        },
+        {
+          "title": "Electric Feel",
+          "artist": "MGMT",
+          "cover": "https://picsum.photos/id/46/200",
+          "duration": "3:50"
+        },
+        {
+          "title": "Ophelia",
+          "artist": "The Lumineers",
+          "cover": "https://picsum.photos/id/47/200",
+          "duration": "2:40"
+        }
+      ]
+    },
+    {
+      "playlistID": 6,
+      "playlist_name": "Hip-Hop Essentials",
+      "playlist_author": "Beats & Bars",
+      "playlist_art": "https://picsum.photos/id/305/200",
+      "playlist_likes": 15,
+      "created_date": "2024-04-10",
+      "songs": [
+        {
+          "title": "SICKO MODE",
+          "artist": "Travis Scott",
+          "cover": "https://picsum.photos/id/48/200",
+          "duration": "5:12"
+        },
+        {
+          "title": "HUMBLE.",
+          "artist": "Kendrick Lamar",
+          "cover": "https://picsum.photos/id/49/200",
+          "duration": "2:57"
+        },
+        {
+          "title": "God's Plan",
+          "artist": "Drake",
+          "cover": "https://picsum.photos/id/50/200",
+          "duration": "3:18"
+        },
+        {
+          "title": "Stronger",
+          "artist": "Kanye West",
+          "cover": "https://picsum.photos/id/51/200",
+          "duration": "5:12"
+        }
+      ]
+    },
+    {
+      "playlistID": 7,
+      "playlist_name": "Regetton",
+      "playlist_author": "Urbano Heat",
+      "playlist_art": "https://picsum.photos/id/501/200",
+      "playlist_likes": 13,
+      "created_date": "2024-02-18",
+      "songs": [
+        {
+          "title": "Me Porto Bonito",
+          "artist": "Bad Bunny ft. Chencho Corleone",
+          "cover": "https://picsum.photos/id/61/200",
+          "duration": "2:58"
+        },
+        {
+          "title": "Tití Me Preguntó",
+          "artist": "Bad Bunny",
+          "cover": "https://picsum.photos/id/43/200",
+          "duration": "4:03"
+        },
+        {
+          "title": "Efecto",
+          "artist": "Bad Bunny",
+          "cover": "https://picsum.photos/id/70/200",
+          "duration": "3:33"
+        },
+        {
+          "title": "Ojitos Lindos",
+          "artist": "Bad Bunny ft. Bomba Estéreo",
+          "cover": "https://picsum.photos/id/73/200",
+          "duration": "4:18"
+        },
+        {
+          "title": "DTFM",
+          "artist": "Young Miko",
+          "cover": "https://picsum.photos/id/75/200",
+          "duration": "3:10"
+        }
+      ]
+    }
+  ]
+}

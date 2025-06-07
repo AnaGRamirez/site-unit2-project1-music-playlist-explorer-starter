@@ -284,4 +284,3 @@ function sortPlaylistsByDate(playlists){
   return playlists.sort((a,b) => new Date(a.created_date) - new Date(b.created_date));
 
 }
-
