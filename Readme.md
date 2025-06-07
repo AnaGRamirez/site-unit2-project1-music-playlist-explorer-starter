@@ -51,13 +51,13 @@ Deployed Application (**required**): https://site-unit2-project1-music-playlist-
       - [x ] The like count on the playlist tile should decrease by 1.
       - [ x] There should be visual feedback (such as the heart turning a different color) to show that the playlist has been unliked by the user.
     - [ ] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS:** In addition to showcasing the above features, for ease of grading, please film yourself liking and unliking:
-      - [ ] a playlist with a like count of 0
-      - [ ] a playlist with a non-zero like count
+      - [ x] a playlist with a like count of 0
+      - [ x] a playlist with a non-zero like count
 
 - [ x] **Shuffle Songs**
   - [x ] Enable users to shuffle the songs within a playlist using a shuffle button in the playlist's detail modal.
   - [ x] When the shuffle button is clicked, the playlist's songs should display in a different order.
-  - [ ] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS:** In addition to showcasing the above features, for ease of grading, please show yourself shuffling the same playlist more than once. 
+  - [ x] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS:** In addition to showcasing the above features, for ease of grading, please show yourself shuffling the same playlist more than once. 
   
 - [x ] **Featured Page**
   - [x ] Application includes a dedicated page that randomly selects and displays a playlist, showing the playlist’s:
@@ -71,7 +71,7 @@ Deployed Application (**required**): https://site-unit2-project1-music-playlist-
     - For example, navigating to the all playlists page and then back to the featured playlist page should result in a new random playlist being displayed
     - Note that because your algorithm will not be truly random, it is possible that the same playlist will feature twice in a row. 
     - [ ] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS:** In addition to showcasing the above features, for ease of grading, please show yourself refreshing the featured page more than once. 
-  - [ ] Application includes a navigation bar or some other mechanism such that users can navigate to the page with all playlists from the featured page and vice versa without using the browser's back and forward buttons. 
+  - [x ] Application includes a navigation bar or some other mechanism such that users can navigate to the page with all playlists from the featured page and vice versa without using the browser's back and forward buttons. 
 
 #### STRETCH FEATURES
 
@@ -134,26 +134,26 @@ Deployed Application (**required**): https://site-unit2-project1-music-playlist-
 
 `TODO://` Add the embedded URL code to your animated app walkthrough below, `ADD_EMBEDDED_CODE_HERE`. Make sure the video actually renders and is playable when viewing this README. Ensure your walkthrough showcases the presence and/or functionality of all features you implemented above (check them off as you film!). Pay attention to any **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS** checkboxes listed above to ensure graders see the full functionality of your website! (🚫 Remove this paragraph after adding walkthrough video)
 
-`ADD_EMBEDDED_CODE_HERE`
+`https://www.loom.com/share/d60c7746e4c84ae7a29d8169d40e1f94?sid=cc3ef846-cb9e-49ea-b38a-30770ce98c12`
 
 ### Reflection
 
 * Did the topics discussed in your labs prepare you to complete the assignment? Be specific, which features in your weekly assignment did you feel unprepared to complete?
 
-Add your response here
+Answer: Yes. The JavaScript lab (The book lovers) was really thorough and prepared me to handle the intricacies of the project. Since the project and the lab had some overlap of concepts, it was really helpful resource when not knowing where to start. One thing I wish we could've covered more is how to debug eventListeners. 
 
 * If you had more time, what would you have done differently? Would you have added additional features? Changed the way your project responded to a particular event, etc.
-  
-Add your response here
+
+
+If I had more time, I defiinitely think I would have implemented all of the stretch features. In particular, I was really looking forward to implementing the search bar functionality. 
 
 * Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
 
-Add your response here
+I think during the Demo, I appreciated people giving me feedback, so that went well. I would say, I did not expect to get nervous, so I should prepare better for a more formal demo in order to combat my nerves. I would also say, I should be more engaging when walking people thorugh my features, figuring out a way to make it exciting for them to see. While watching others present, I was also really impressed and learned a lot about from other people's impelmentation. One thing I want to try is the dynamic search bar functinality. One of my classmates told me that essentially they had a eventlistener on an input, so that the search was dynamic for each new letter the user inputs in search bar.
 
 ### Open-source libraries used
 
-- Add any links to open-source libraries used in your project.
-
+- None
 ### Shout out
 
-Give a shout out to somebody from your cohort that especially helped you during your project. This can be a fellow peer, instructor, TA, mentor, etc.
+The tech fellows and instructors are the best. I love Paige's enthusiasm. And I appreciate Terrance and his willingness to help. All very amazing people!! Thank you!
